@@ -21,7 +21,7 @@ public class Main {
             bigDictionary.put(key, values);
             for (int i = 0; i < values.length; i++) {
                 String newKeys = values[i];
-                ArrayList<String> stringArrayList = new ArrayList<>();
+                ArrayList<String> stringArrayList = new ArrayList<>(values.length);
                 stringArrayList.addAll(Arrays.asList(values));
                 stringArrayList.remove(newKeys);
                 stringArrayList.add(key);
